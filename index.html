@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!---Length page should be able to convert between
+    millimeter, centimeter, meter, kilometer, inch, foot, yard, mile.
+-->
+<html>
+<head>
+    <title>Unit Converter</title>    
+</head>
+
+
+<body>
+
+<h1>Unit Converter</h1>
+
+<hr>
+
+<a
+    href="index.html">
+    <button type = "button" disabled>Length</button>
+<a 
+    href="weight.html">
+    <button>Weight</button>
+
+</a>
+
+<a
+    href="temp.html">
+    <button>Temperature</button>
+
+</a>
+
+<hr>
+
+<form>
+
+
+
+    <div>
+    <label for="convertLength"> Enter the length to convert:</label>
+    <input type = "text" id = "box1" name = "convertLength"> 
+    </div>
+    
+    <div>
+    <label for="convertFromUnit"> Enter the unit to convert from:</label>
+    <input type = "text" id = "box2" name = "convertFromUnit"> 
+    </div>
+
+    <div>
+    <label for="convertToUnit"> Enter the unit to convert to:</label>
+    <input type = "text" id = "box3" name = "convertToUnit"> 
+    </div>
+    
+    <br>
+
+    <input type = "submit" target = "self">
+
+    <script src = "script.js"></script>
+
+</form>
+
+
+</body>
+
+
+
+</html>
