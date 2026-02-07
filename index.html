@@ -4,63 +4,93 @@
     millimeter, centimeter, meter, kilometer, inch, foot, yard, mile.
 -->
 <html>
-<head>
-    <title>Unit Converter</title>    
-</head>
+    <head>
+        <!---names tab Unit Converter-->
+        <title>Unit Converter</title>    
+    </head>
+        <body>
+        
 
 
-<body>
-
-<h1>Unit Converter</h1>
-
-<hr>
-
-<a
-    href="index.html">
-    <button type = "button" disabled>Length</button>
-<a 
-    href="weight.html">
-    <button>Weight</button>
-
-</a>
-
-<a
-    href="temp.html">
-    <button>Temperature</button>
-
-</a>
-
-<hr>
-
-<form>
+            <!---adds a Unit Converter Heading-->
+            <h1 id = "myHeader">Unit Converter</h1>
 
 
+            <hr>
 
-    <div>
-    <label for="convertLength"> Enter the length to convert:</label>
-    <input type = "text" id = "box1" name = "convertLength"> 
-    </div>
-    
-    <div>
-    <label for="convertFromUnit"> Enter the unit to convert from:</label>
-    <input type = "text" id = "box2" name = "convertFromUnit"> 
-    </div>
+            <!---links to other aspects of the project, weight, temp-->
+            <a
+                href="index.html">
+                <button type = "button" disabled>Length</button>
+            <a 
+                href="weight.html">
+                <button>Weight</button>
 
-    <div>
-    <label for="convertToUnit"> Enter the unit to convert to:</label>
-    <input type = "text" id = "box3" name = "convertToUnit"> 
-    </div>
-    
-    <br>
+            </a>
 
-    <input type = "submit" target = "self">
+            <a
+                href="temp.html">
+                <button>Temperature</button>
 
-    <script src = "script.js"></script>
+            </a>
 
-</form>
+            <hr>
 
 
-</body>
+            <!--- this is where the main text box and option boxes are-->
+            <form>
+                <div>
+                <label for="convertLength">Enter the length to convert:</label>
+                <input type = "number" id = "box1" name = "convertLength"> 
+                </div>
+                
+                <div>
+                <label for="convertFromUnit"> Unit to convert from:</label>
+                    <select id = "convertFromUnit" name = "fromUnit">
+                        
+                        <optgroup label = "Metric"></optgroup>
+                            <option value = "millimeter">Millimeter</option>
+                            <option value = "centimeter">Centimeter</option>
+                            <option value = "meter">Meter</option>
+                            <option value = "kilometer">Kilometer</option>
+                            
+                        <optgroup label = "Imperial"></optgroup>
+                            <option value = "inch">Inch</option>
+                            <option value = "foot">Foot</option>
+                            <option value = "yard">Yard</option>
+                            <option value = "mile">Mile</option>
+                    </select>
+                </div>
+
+                <div>
+                <label for="convertToUnit"> Enter the unit to convert to:</label>
+                    <select id = "convertToUnit" name = "toUnit">
+                    
+                    <optgroup label = "Metric"></optgroup>
+                    <option value = "millimeter">Millimeter</option>
+                    <option value = "centimeter">Centimeter</option>
+                    <option value = "meter">Meter</option>
+                    <option value = "kilometer">Kilometer</option>
+                    
+                    <optgroup label = "Imperial"></optgroup>
+                    <option value = "inch">Inch</option>
+                    <option value = "foot">Foot</option>
+                    <option value = "yard">Yard</option>
+                    <option value = "mile">Mile</option>
+                </select>
+                
+                </div>
+                
+                <br>
+
+                <button type ="button" id = "calculateButton" >Calculate</button>
+
+                <script src = "script.js"></script>
+
+            </form>
+
+
+        </body>
 
 
 
