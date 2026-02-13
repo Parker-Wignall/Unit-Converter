@@ -41,24 +41,42 @@
 
     <div>
     <label for="convertWeight"> Enter the weight to convert:</label>
-    <input type = "text" id = "convertWeight" name = "convertWeight" placeholder="convertWeight"> 
+    <input type = "number" id = "convertWeight" name = "convertWeight" placeholder="convertWeight"> 
     </div>
     
     <div>
-    <label for="convertFromUnit"> Enter the unit to convert from:</label>
-    <input type = "text" id = "convertFromUnit" name = "convertFromUnit" placeholder="convertFromUnit"> 
+        <label for="convertFromUnit"> Enter the unit to convert from:</label>
+        <select id = "convertFromUnit" name = "convertFromUnit">
+            <optgroup label = "Metric"></optgroup>
+                <option value = "milligram">Milligram</option> 
+                <option value = "gram">Gram</option>
+                <option value = "kilogram">Kilogram</option>
+            <optgroup label = "Imperial"></optgroup>
+                <option value = "ounce">Ounce</option>
+                <option value = "pound">Pound</option>
+        </select>
+            
     </div>
 
     <div>
-    <label for="convertToUnit"> Enter the unit to convert to:</label>
-    <input type = "text" id = "convertToUnit" name = "convertToUnit" placeholder="convertToUnit"> 
+        <label for="convertToUnit"> Enter the unit to convert to:</label>
+        <select id = "convertToUnit" name = "convertToUnit">
+            <optgroup label = "Metric"></optgroup>
+                <option value = "milligram">Milligram</option> 
+                <option value = "gram">Gram</option>
+                <option value = "kilogram">Kilogram</option>
+            <optgroup label = "Imperial"></optgroup>
+                <option value = "ounce">Ounce</option>
+                <option value = "pound">Pound</option>
+        </select>
+            
     </div>
     
     <br>
 
-    <input type = "submit" target = "self">
+    <button type ="button" id = "calculateButton" >Calculate</button>
 
-
+                <script src = "weight.js"></script>
 
 </form>
 
