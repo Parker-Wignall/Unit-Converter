@@ -7,7 +7,7 @@ let toUnit = document.getElementById("convertToUnit");
 document.getElementById("calculateButton").onclick = function (){
 
 
-    fromUnit = fromUnit.value
+    fromUnit = fromUnit.value;
     toUnit = toUnit.value;
     convertWeight = convertWeight.value;
     let temp;

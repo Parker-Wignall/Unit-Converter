@@ -41,22 +41,31 @@
 
     <div>
     <label for="convertTemp"> Enter the temperature to convert:</label>
-    <input type = "text" id = "convertTemp" name = "convertTemp" placeholder="convertTemp"> 
+    <input type = "number" id = "convertTemp" name = "convertTemp" placeholder="convertTemp"> 
     </div>
     
     <div>
     <label for="convertFromUnit"> Enter the unit to convert from:</label>
-    <input type = "text" id = "convertFromUnit" name = "convertFromUnit" placeholder="convertFromUnit"> 
+    <select type = "text" id = "convertFromUnit" name = "convertFromUnit">
+        <option value = "celsius">Celsius</option>
+        <option value = "fahrenheit">Fahrenheit</option>
+        <option value = "kelvin">Kelvin</option> 
+    </select>
     </div>
 
     <div>
     <label for="convertToUnit"> Enter the unit to convert to:</label>
-    <input type = "text" id = "convertToUnit" name = "convertToUnit" placeholder="convertToUnit"> 
+    <select type = "text" id = "convertToUnit" name = "convertToUnit">
+        <option value = "celsius">Celsius</option>
+        <option value = "fahrenheit">Fahrenheit</option>
+        <option value = "kelvin">Kelvin</option> 
+    </select>    
     </div>
     
     <br>
 
-    <input type = "submit" target = "self">
+    <button type ="button" id = "calculateButton" >Convert</button>
+    <script src = "temp.js">    </script>
 
 
 
